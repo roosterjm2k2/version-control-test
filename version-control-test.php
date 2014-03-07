@@ -9,4 +9,11 @@
  * License: GPL2
  */
 
- 
+// The primary template tag for this plugin.
+function vct_display_version() {
+ 	$commits = get_option('vct_commit_count');
+ 	$version = $commits / 10;
+ 	print "<span class=\"version\">Version $version";
+}
+
+?>
