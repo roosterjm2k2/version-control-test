@@ -33,7 +33,7 @@ add_action('admin_init','vct_meta_init');
 // Add the meta box to posts and pages
 function vct_meta_init() {
 	add_meta_box('vct_meta', 'Version Control', 'vct_meta_setup', 'page', 'side', 'high');
-	add_meta_box('vct_meta', 'Version Control', 'vct_meta_setup', 'post', 'side', 'high');
+	//add_meta_box('vct_meta', 'Version Control', 'vct_meta_setup', 'post', 'side', 'high');
     add_action('save_post','vct_meta_save');
 }
 
