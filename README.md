@@ -1,8 +1,12 @@
 ==================================================================
 Mission: Version Control
+
 Tests: GitHub, API, PHP, WordPress and problem solving skills
+
 Difficulty: 4/5
+
 Est. Time: 4 hours
+
 ==================================================================
 
 Briefing:
@@ -16,6 +20,13 @@ Displays the text "Version 0.1" on the footer of every page, with the version nu
 Allow a WordPress admin to select any valid version number to be associated with a WordPress page.  If the version number selected is less than the current version number, display the message in bold, red text "This documentation is for Version X.X", instead of the global version number
 
 Requirements:
-Create a blank, public GitHub repo when you receive the mission and add "uptrending" and "mattkeys" as collaborators
-Create a feature branch for this mission and add these requirements as your first commit
-Send a pull request when your work is complete
+
+  - Create a blank, public GitHub repo when you receive the mission and add "uptrending" and "mattkeys" as collaborators
+  - Create a feature branch for this mission and add these requirements as your first commit
+  - Send a pull request when your work is complete
+
+Notes:
+
+  - Site at http://lunchrace.com/dev/
+  - Admin at http://lunchrace.com/dev/wp-admin/
+  - Admin User is admin / iamaprettypony
