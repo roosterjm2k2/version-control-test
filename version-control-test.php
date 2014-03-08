@@ -11,9 +11,21 @@
 
 // The primary template tag for this plugin.
 function vct_display_version() {
- 	$commits = get_option('vct_commit_count');
- 	$version = $commits / 10;
- 	print "<span class=\"version\">Version $version";
+	global $post;
+	$commits = get_option('vct_commit_count');
+	$post_version = false;
+
+	if($post && $post->ID) {
+		$post_version = get_post_meta($post->ID,'_vct_version',TRUE);
+	} 
+		
+	if($post_version) {
+		$version = $post_version / 10;
+		print "<span class=\"version alert\">This documentation is for Version $version</span>";
+	} else {
+		$version = $commits / 10;
+		print "<span class=\"version\">Version $version</span>";
+	}
 }
 
 add_action('admin_init','vct_meta_init');
